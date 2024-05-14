@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=H, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Hello world</p>
-    <div></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=H, initial-scale=1.0" />
+    <title>MATH UP!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator-screen" id="calculator-screen">0</div>
+      <div class="calculator-keys">
+        <button type="button" onclick="inputDigit('7')">7</button>
+        <button type="button"onclick="inputDigit('8')">8</button>
+        <button type="button"onclick="inputDigit('9')">9</button>
+        <button type="button">&#8730;</button>
+        <button type="button"onclick="inputDigit('4')">4</button>
+        <button type="button"onclick="inputDigit('5')">5</button>
+        <button type="button"onclick="inputDigit('6')">6</button>
+        <button type="button" class="operator">&divide;</button>
+        <button type="button"onclick="inputDigit('1')">1</button>
+        <button type="button"onclick="inputDigit('2')">2</button>
+        <button type="button"onclick="inputDigit('3')">3</button>
+        <button type="button" class="operator">&times;</button>
+        <button type="button"onclick="inputDigit('0')">0</button>
+        <button type="button" onclick="inputDecimal()">.</button>
+        <button type="button" onclick="toggleSign()">+/-</button>
+        <button type="button"class="operator">-</button>  
+        <button type="button"class="all-clear">AC</button>
+        <button type="button" class="clear-entry">CE</button>
+        <button type="button"class="operator">=</button>
+        <button type="button" class="operator">+</button>   
+        
+      </div>
+    </div>
+    <script src="app2.js"></script>
+  </body>
 </html>
